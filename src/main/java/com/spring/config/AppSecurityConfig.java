@@ -8,6 +8,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
-@Import(InMemoryUserDetailsConfig.class)
+//@Import(InMemoryUserDetailsConfig.class)
+@Import(CustomUserDetailsConfig.class)
 public class AppSecurityConfig {
 }
